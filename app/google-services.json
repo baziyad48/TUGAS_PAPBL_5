@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1070499683809",
+    "firebase_url": "https://majestic-nimbus-269402.firebaseio.com",
+    "project_id": "majestic-nimbus-269402",
+    "storage_bucket": "majestic-nimbus-269402.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070499683809:android:37d07fec461697251486a0",
+        "android_client_info": {
+          "package_name": "com.example.firebase_auth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1070499683809-ic9q844uoo24ut71qjo7406p1jq7e79t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuQuwajQnyHCGbcnVKeAH8gF1RnIGNpiQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1070499683809-ic9q844uoo24ut71qjo7406p1jq7e79t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
