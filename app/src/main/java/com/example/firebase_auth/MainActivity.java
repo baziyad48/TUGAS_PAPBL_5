@@ -39,7 +39,8 @@ public class MainActivity extends AppCompatActivity {
         _currentUser = _mAuth.getCurrentUser();
         if(_currentUser != null) {
             if(_currentUser.isEmailVerified()) {
-                Intent map = new Intent(MainActivity.this, MainActivity.class);
+                Toast.makeText(MainActivity.this, "You already sign in before", Toast.LENGTH_LONG).show();
+                Intent map = new Intent(MainActivity.this, MapsActivity.class);
                 startActivity(map);
             }
         }
@@ -55,7 +56,8 @@ public class MainActivity extends AppCompatActivity {
                                 FirebaseUser user = _mAuth.getCurrentUser();
                                 if(user != null) {
                                     if(user.isEmailVerified()) {
-                                        Intent map = new Intent(MainActivity.this, MainActivity.class);
+                                        Intent map = new Intent(MainActivity.this, MapsActivity.class);
+                                        Toast.makeText(MainActivity.this, "Success to sign in", Toast.LENGTH_LONG).show();
                                         startActivity(map);
                                     } else {
                                         Toast.makeText(MainActivity.this, "Email not verified!", Toast.LENGTH_LONG).show();
@@ -93,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
                                     });
                                 }
                                 if(user.isEmailVerified()) {
-                                    Intent map = new Intent(MainActivity.this, MainActivity.class);
+                                    Intent map = new Intent(MainActivity.this, MapsActivity.class);
                                     startActivity(map);
                                 } else {
                                     final String _newEmail = user.getEmail();
